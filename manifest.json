@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Toggle Cookies",
+  "version": "1.0.0",
+
+  "description": "__MSG_extensionDescription__",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{f83b5e4a-3360-4e16-a0ed-c6d77d3198ac}",
+      "strict_min_version": "59.0"
+    }
+  },
+
+  "icons": {
+    "24": "icons/togglecookies.svg",
+    "32": "icons/togglecookies.svg",
+    "50": "icons/togglecookies.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/togglecookies.svg",
+    "default_title": "__MSG_button_title__",
+    "theme_icons": [{
+      "dark": "icons/togglecookies.svg",
+      "light": "icons/togglecookies-light.svg",
+      "size": 19
+    }]
+  },
+
+  "permissions": [
+    "privacy",
+    "storage"
+  ],
+
+  "default_locale": "en"
+}
