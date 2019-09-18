@@ -1,5 +1,5 @@
 Toggle Cookies
-====================
+==============
 
 Main repository: https://github.com/M-Reimer/togglecookies.
 
