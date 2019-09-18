@@ -24,7 +24,7 @@ async function ToolbarButtonClicked() {
   // Cookies are off --> Enable
   if (value.behavior == "reject_all") {
     const prefs = await browser.storage.local.get();
-    const enabledbehavior = prefs.enabledCookieBehavior || "allow_all";
+    const enabledbehavior = prefs.enabledCookieBehavior || "reject_trackers";
     value.behavior = enabledbehavior;
     await browser.privacy.websites.cookieConfig.set({value: value});
   }
